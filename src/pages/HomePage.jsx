@@ -62,11 +62,6 @@ const HomePage = () => {
             {/* Main Content */}
             <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6">
                 <div className="text-center mb-20 animate-fade-in-up">
-                    <img
-                        src={Logo}
-                        alt="She Can Logo"
-                        className="mx-auto mb-6 w-32 h-auto animate-fade-in-up"
-                    />
                     <h1 className="text-7xl md:text-8xl font-light mb-8 tracking-wider">
                         {['She  ', 'Can  ', 'Foundation'].map((letter, i) => (
                             <span
