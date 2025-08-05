@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // base:'/SCF_Frontend_Assignment/'
+  base:'/SCF_Frontend_Assignment/'
 })
