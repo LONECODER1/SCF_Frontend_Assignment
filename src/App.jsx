@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
@@ -6,30 +6,30 @@ import SignUp from './pages/SignUp';
 import Leaderboard from './pages/Leaderboard';
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
+      path: '/',
       element: <HomePage />,
-      path: '/'
     },
     {
+      path: '/login',
       element: <Login />,
-      path: '/login'
     },
     {
+      path: '/signup',
       element: <SignUp />,
-      path: '/signup'
     },
     {
+      path: '/dashboard',
       element: <Dashboard />,
-      path: '/dashboard'
     },
     {
+      path: '/leaderboard',
       element: <Leaderboard />,
-      path: '/leaderboard'
     },
-  ])
+  ]);
 
-  return (<RouterProvider router={router} />);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
