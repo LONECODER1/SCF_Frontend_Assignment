@@ -25,7 +25,6 @@ const LoginCard = () => {
         });
     };
     
-    //change this function to apply auth
     const handleSubmit = (e) => {
         e.preventDefault();
         let errors = { email: '', password: '' };
@@ -108,7 +107,7 @@ const LoginCard = () => {
                             >
                                 {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                             </button>
-                            {/*  Show password error */}
+                            {/* ✅ Show password error */}
                             {formErrors.password && (
                                 <p className="text-red-500 text-sm mt-1">{formErrors.password}</p>
                             )}
