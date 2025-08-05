@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Eye, EyeOff, Mail, Lock, User, ArrowRight, Tag } from 'lucide-react';
 import { FcGoogle } from "react-icons/fc";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
-import { useUser } from '../context/User'; // ✅ import context
+import { useUser } from '../context/User'; 
 
 const SignUpCard = () => {
     const navigate = useNavigate();
-    const { setUser } = useUser(); // ✅ get setter from context
+    const { setUser } = useUser(); 
     const [showPassword, setShowPassword] = useState(false);
     const [formData, setFormData] = useState({
         email: '',

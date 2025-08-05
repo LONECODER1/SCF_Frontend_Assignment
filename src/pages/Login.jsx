@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import LoginCard from '../components/LoginCard';
 function Login() {
   const [particles, setParticles] = useState([]);
